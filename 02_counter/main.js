@@ -10,7 +10,10 @@ let count = 0;
 const resultH1 = document.getElementById("result");
 // const resultH1 = document.querySelector("#result");
 // const resultH1 = result;
-const plusButton = document.getElementsByClassName("plusbtn")[0];
+// const plusButton = document.getElementsByClassName("plusbtn")[0];
+// const plus2Button = document.getElementsByClassName("plusbtn")[1];
+// const minusButton = document.getElementsByClassName("plusbtn")[2];
+
 
 // 숫자 증가하자
 
@@ -32,12 +35,11 @@ const plusButton = document.getElementsByClassName("plusbtn")[0];
 //     resultH1.innerHTML = count
 // })
 
-function plus(){
-    count++; // count += 1; count = count + 1;
+function plus(number = 1){
+    count += number // count += 1; count = count + 1;
     //숫자 표시하자
     resultH1.innerHTML = count
 }
-
 
 // (함수정의)();
 // (function() {
@@ -45,7 +47,7 @@ function plus(){
 
 // })()
 
-minusButton.addEventListener("click", function 처리함수(){
-    count--; 
-    resultH1.innerHTML = count
-})
+// minusButton.addEventListener("click", function 처리함수(){
+//     count--; 
+//     resultH1.innerHTML = count
+// })
