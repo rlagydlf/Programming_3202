@@ -20,22 +20,30 @@ const plusButton = document.getElementsByClassName("plusbtn")[0];
 //     resultH1.innerHTML = count
 // })
 
-plusButton.onclick = (() => {
+// plusButton.addEventListener("click", function 처리함수(){
+//     count++; // count += 1; count = count + 1;
+//     //숫자 표시하자
+//     resultH1.innerHTML = count
+// })
+
+// plusButton.onclick = (() => {
+//     count++; // count += 1; count = count + 1;
+//     //숫자 표시하자
+//     resultH1.innerHTML = count
+// })
+
+function plus(){
     count++; // count += 1; count = count + 1;
     //숫자 표시하자
     resultH1.innerHTML = count
-})
-plusButton.addEventListener("click", function 처리함수(){
-    count++; // count += 1; count = count + 1;
-    //숫자 표시하자
-    resultH1.innerHTML = count
-})
-
-(함수정의)();
-(function() {
+}
 
 
-})()
+// (함수정의)();
+// (function() {
+
+
+// })()
 
 minusButton.addEventListener("click", function 처리함수(){
     count--; 
