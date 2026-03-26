@@ -34,7 +34,7 @@ const resultH1 = document.getElementById("result");
 //     //숫자 표시하자
 //     resultH1.innerHTML = count
 // })
-
+resultH1.innerHTML = count
 function plus(number = 1){
     count += number // count += 1; count = count + 1;
     //숫자 표시하자
