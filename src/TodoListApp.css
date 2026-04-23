@@ -34,7 +34,9 @@
 .todo__button--add {
     background-color: #4984e4;
 }
-
+.todo__input--edit{
+    flex-grow: 1;
+}
 .todo__item {
     display: flex;
     align-items: center; /* 높이 가운데 정렬*/
