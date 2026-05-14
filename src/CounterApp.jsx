@@ -8,7 +8,7 @@ function CounterApp() {
 
   //count : 이전 또는 현재 값. setCount() : count 값을 변경하는 함수, 반드시 이걸 거쳐야 함
   const [count, setCount] = useState(0)
-  function plusMax10() {  
+  function plusMax10(count) {  
    setCount((count) => {     
     if (count +1 >= 10) return 10;
         return count + 1;
@@ -34,7 +34,7 @@ function CounterApp() {
       })
       }>+(최대10까지)</button>
       <button onClick={() => setCount(0)}>Reset</button>
-      <button onClick={() => setCount((count) => plusMax10())}>+(최대10까지)</button>
+      <button onClick={() => setCount((count) => plusMax10(count))}>+(최대10까지)</button>
       {/* <button onClick={() => setCount((count) => count +1 >= 10 ? 10 : count + 1)}>+(최대10까지)</button> */}
 
       {/* <button onClick={setCount(0)}>Reset</button>  
